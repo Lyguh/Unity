@@ -1,0 +1,135 @@
+.column__menu {
+
+  border-right: lightgray rem(1) solid;
+  &--header {
+    display: flex;
+    justify-content: center;
+    &--logo {
+      display: flex;
+      justify-content: center;
+      @include tablet {
+        display: none;
+      }
+    }
+    &--button {
+      position: relative;
+      left: rem(10);
+      right: rem(0);
+      @include laptop {
+        top: rem(4);
+        left: rem(0);
+      }
+      @include tablet {
+        left: rem(0);
+        margin-right: rem(17);
+      }
+      &--menu {
+        font-size: rem(32);
+        @include laptop {
+          font-size: rem(25);
+        }
+      }
+    }
+  }
+}
+.column__main {
+
+  &--header {
+    display: flex;
+    justify-content: space-between;
+    &--buttons {
+      display: flex;
+      justify-content: center;
+    }
+    &--button {
+      margin-left: rem(60);
+      @include tablet {
+        margin-left: rem(40);
+      }
+      &-content {
+        color: #808191;
+        font-size: rem(32);
+      }
+      &--notification{
+        position: relative;
+        bottom: rem(5);
+        display: flex;
+        &--count {
+          height: 25%;
+          border: #ff614d rem(3) solid;
+          border-radius: 50%;
+          background: #ff614d;
+          position: relative;
+          right: rem(5);
+          &--text {
+            position: relative;
+            bottom: rem(2);
+            color: white;
+            font-size: rem(16);
+          }
+        }
+      }
+    }
+}
+}
+
+.browse {
+  display: flex;
+  &-compass {
+    margin-left: rem(50);
+    font-size: rem(22);
+    color: #808191;
+  }
+  &-text {
+    font-size: rem(22);
+    margin-left: rem(10);
+    color: #808191;
+  }
+  &-arrow {
+    font-size: rem(22);
+    margin-left: rem(50);
+    color: #808191;
+  }
+}
+.search--form {
+  position: relative;
+  bottom: rem(5);
+  width: rem(500);
+  @include tablet {
+    left: rem(30);
+    width: rem(300);
+    width: rem(300);
+  }
+  &--icon {
+    font-size: rem(22);
+    color: #808191;
+  }
+  &--field {
+    border: none;
+    width: rem(450);
+    height: rem(50);
+    @include laptop {
+      width: rem(350);
+    }
+    @include tablet {
+      width: rem(250);
+    }
+  }
+  &--field::placeholder {
+    font-size: rem(17);
+    color: #808191;
+  }
+  @include laptop {
+    bottom: rem(8);
+    margin-left: rem(30);
+  }
+}
+.column__main--header--button--add {
+  @include tablet {
+    display: none;
+  }
+}
+.button--avatar {
+  position: relative;
+  bottom: rem(5);
+}

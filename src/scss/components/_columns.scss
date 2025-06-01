@@ -1,0 +1,8 @@
+.columns__all {
+  margin: 2vw;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  @include laptop {
+    grid-template-columns: 15% 85%;
+  }
+}
